@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+a {
+    display: inline;
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+}
+
+header {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header-icons-container {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: #47CFAC;
+}
+
+.header-icons-container .icons {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    justify-content: space-between;
+    justify-self: end;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.header-icons-container .icons a:nth-child(1) span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('https://cdn3.iconfinder.com/data/icons/social-media-black-white-2/512/BW_Facebook_glyph_svg-256.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-icons-container .icons a:nth-child(2) span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Twitter_svg-256.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-icons-container .icons a:nth-child(3) span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('https://cdn2.iconfinder.com/data/icons/social-media-2421/512/Instagram-256.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-icons-container .icons a:nth-child(4) span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Linkedin_svg-256.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-icons-container .icons a:nth-child(5) span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url('https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Youtube_svg-256.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+
+.nav-logo-container {
+    align-self: center;
+    margin-left: 50px;
+}
+
+.nav-logo-container img {
+    width: 220px;
+}
+
+.profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.profile-link a {
+    font-size: 1.6rem;
+    border-bottom: 1px solid #000;
+}
+
+main {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://uc8b2ff97e976e4b88b0df806174.previews.dropboxusercontent.com/p/thumb/ABbb8fHvytekp70odNp7PC0jNr192Uf1Q8Yl7_g3vz8aWtXQA__TLSaRu70y8cQp10loxAhroyN3H2KTUKPfc6wcwgmVOxdc5SoZDSb6KBcfIRgxdWUEJ06sMaFL504eUngAVd50oUR4UsqEu7ubPYvVxQjbGBzdu7PKkxGhrkCvt65TB52IlNXXhvm1eXqiWHf9lexbT_biyXnEz7Vr-Di8pJ7Vh1IYf7p1ZqhP4GU5mC1t6YOt-PHv4u6qx8HqG9TOt30sCiTfX6WV7mtIbNHuibx97OKu2A_CgtD7cHMgXZrguvRv6MxyqGTJ08kpSEipQMjdfAI4sm9DmBzGMyDVmhV2J37xtAGHdL-UC6o5tKGSNsUhqchffIMT4K4xu0U/p.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title h1 {
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+}
+
+.button {
+    align-self: flex-start;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    color: #000;
+    background-color: #47CFAC;
+    border: none;
+    cursor: pointer;
+}
+
+
