@@ -127,26 +127,34 @@ nav {
 
 main {
     display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     place-items: center;
     width: 100%;
     height: 100vh;
-    background-image: url('https://uc8b2ff97e976e4b88b0df806174.previews.dropboxusercontent.com/p/thumb/ABbb8fHvytekp70odNp7PC0jNr192Uf1Q8Yl7_g3vz8aWtXQA__TLSaRu70y8cQp10loxAhroyN3H2KTUKPfc6wcwgmVOxdc5SoZDSb6KBcfIRgxdWUEJ06sMaFL504eUngAVd50oUR4UsqEu7ubPYvVxQjbGBzdu7PKkxGhrkCvt65TB52IlNXXhvm1eXqiWHf9lexbT_biyXnEz7Vr-Di8pJ7Vh1IYf7p1ZqhP4GU5mC1t6YOt-PHv4u6qx8HqG9TOt30sCiTfX6WV7mtIbNHuibx97OKu2A_CgtD7cHMgXZrguvRv6MxyqGTJ08kpSEipQMjdfAI4sm9DmBzGMyDVmhV2J37xtAGHdL-UC6o5tKGSNsUhqchffIMT4K4xu0U/p.png');
+    background-image: url('https://uc157ccec08ece7e6265c805668e.previews.dropboxusercontent.com/p/thumb/ABag7HzSGJcXSLzhC983AOL8NS3gaqvsYKkgIJUUyqhZv50fKMrks3kJKB_0D6ahuX7uh895P032erRQUtQlHOyF2Sc1Rj0pwW29Ir6aBittfFAnZQU5Y0cHnWM-ZJrEt8aYXFrpz3NXg4utrq66WYCjSlT0W7WW77X-eXK_nb-I0A3Wt7-tiQQiEAhftgb693vAsrGFR0Fax2Tjhl3azWKVV6Axz1qFBQcUcN7HuiaL1UlGpBzzuAYCIhvXheZE0CpiqrZR3QN9HDIRmQRdwTZQLQgLil_CieFqGtG-ll7CFrY2gU80Pr8Qi0Rwrs-VaGs6jwbJb8LlQKBiPkSXoYvgS438VvFcq_pkIlRpET9t-CaQhldtALm6KVkBWc4tmLw/p.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.title {
+    grid-column: 2 / 3;
 }
 
 .title h1 {
     font-size: 4rem;
     color: #fff;
     text-align: center;
+    letter-spacing: 1rem;
 }
 
 .button {
+    padding: 20px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
     align-self: flex-start;
-    width: 100px;
-    height: 50px;
+    font-size: 1.4rem;
     font-weight: bold;
     color: #000;
     background-color: #47CFAC;
@@ -154,4 +162,27 @@ main {
     cursor: pointer;
 }
 
+.button a {
+    width: 100px;
+    height: 50px;
+    /* text-align: center; */
+}
 
+@media (max-width: 640px) {
+    .nav-logo-container .mobile-width-logo {
+        width: 180px;
+    }
+
+    .header-icons-container .icons {
+        margin-right: 0;
+        justify-self: center;
+    }
+
+    .nav-logo-container {
+        margin: 0;
+    }
+
+    .title h1 {
+        letter-spacing: 0;
+    }
+}
