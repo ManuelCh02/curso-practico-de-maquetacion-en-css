@@ -17,16 +17,16 @@ a {
     color: hsl(0, 0%, 0%);
 }
 
+.grid-container {
+    max-width: 980px;
+    margin: auto;
+}
+
 header {
     width: 100%;
     height: 140px;
     display: grid;
     grid-template-rows: 1fr 1fr;
-}
-
-.grid-container {
-    max-width: 1300px;
-    margin: auto;
 }
 
 .header-icons-container {
@@ -124,6 +124,7 @@ nav {
     border-bottom: 1px solid #000;
 }
 
+
 .blog-notices-section {
     padding: 20px 80px;
     width: 100%;
@@ -152,7 +153,6 @@ nav {
 .notice-post-info {
     /* display: grid;
     gap: 10px; */
-    width: 300px;
     align-self: center;
 }
 
@@ -166,12 +166,6 @@ nav {
     font-size: 1.6rem;
 }
 
-.notice-post-info a {
-    padding: 10px;
-    font-size: 1.4rem;
-    font-weight: bold;
-    border: 1px solid #47CFAC;
-}
 
 .blogpost-title h2 {
     padding: 20px 0;
@@ -179,6 +173,7 @@ nav {
     text-align: center;
     border-bottom: 1px solid #e6e9ed;
 }
+
 
 .blogpost-container {
     padding: 0 150px;
@@ -195,11 +190,6 @@ nav {
     width: 320px;
 }
 
-.post img {
-    margin-bottom: 10px;
-    width: 100%;
-}
-
 .post h3 {
     margin-bottom: 10px;
     font-size: 2rem;
@@ -211,18 +201,52 @@ nav {
     text-align: justify;
 }
 
-.post a {
-    padding: 10px;
-    font-size: 1.4rem;
-    font-weight: bold;
-    border: 1px solid #47CFAC;
+
+.contact-main-container {
+    margin-top: 50px;
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: #e0e3ea;
 }
+
+.contact {
+    width: 320px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.contact-main-container img {
+    width: 80px;
+    height: 80px;
+}
+
+.contact-left,
+.contact-right {
+    margin-left: 10px;
+}
+
+.contact-left a,
+.contact-right a {
+    padding-bottom: 5px;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #000;
+}
+
+.contact-left p,
+.contact-right p {
+    margin-top: 10px;
+    font-size: 1.6rem;
+}
+
 
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
     width: 100%;
     height: 80px;
     background-color: #04222d;
@@ -234,7 +258,6 @@ footer section p {
     font-size: 1.6rem;
     color: #fff;
 }
-
 
 /* @media (max-width: 640px) {
     .header-icons-container .icons {

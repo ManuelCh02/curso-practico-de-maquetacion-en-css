@@ -156,8 +156,10 @@ nav {
 }
 
 .contact-main-container {
+    width: 100%;
+    min-height: 250px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 50px;
     background-color: #e0e3ea;
@@ -181,6 +183,7 @@ nav {
 
 .contact-left a,
 .contact-right a {
+    padding-bottom: 5px;
     font-size: 1.6rem;
     border-bottom: 1px solid #000;
 }

@@ -168,7 +168,7 @@ main {
     /* text-align: center; */
 }
 
-@media (max-width: 640px) {
+/* @media (max-width: 640px) {
     .nav-logo-container .mobile-width-logo {
         width: 180px;
     }
@@ -185,4 +185,4 @@ main {
     .title h1 {
         letter-spacing: 0;
     }
-}
+} */
