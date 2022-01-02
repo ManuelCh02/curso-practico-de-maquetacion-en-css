@@ -157,7 +157,7 @@ nav {
 
 .contact-main-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 50px;
     background-color: #e0e3ea;
